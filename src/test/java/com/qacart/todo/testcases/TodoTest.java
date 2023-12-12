@@ -50,5 +50,5 @@ public class TodoTest extends BaseTest {
         Assert.assertTrue(isNotTodosDisplayed);
 
         }
-/////
+
 }
