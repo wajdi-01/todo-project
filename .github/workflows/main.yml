@@ -1,6 +1,6 @@
 name: Selenium E2E test
 
-on: [push]
+on: [ push ]
 
 jobs:
   test:
@@ -19,12 +19,6 @@ jobs:
 
       - name: Run Test
         run: mvn clean test
-
-      # Créer et basculer vers la branche gh-pages
-      - name: Create and switch to gh-pages branch
-        run: |
-          git checkout -b gh-pages
-          git push origin gh-pages
 
       - name: Get Allure history
         uses: actions/checkout@v2
